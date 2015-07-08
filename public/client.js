@@ -10,6 +10,10 @@ var mixedColor = []
 
 for (var i=0; i < colorOne.length; i++) {
   colorOne[i].addEventListener('click', function(e) {
+    if (e.hasOwnProperty) {
+      // colorOne.innerHTML = 'first'
+      colorVal.innerHTML = 'Click Another color'
+    }
     firstColor = e.target.dataset.colors.split(',')
     firstColor.forEach(function(val, index) {
       firstColor[index] = parseInt(val)
