@@ -1,3 +1,6 @@
+var red = document.getElementById('red')
+var green = document.getElementById('green')
+var blue = document.getElementById('blue')
 var mix = document.getElementById('mix-color')
 var colorOne = document.getElementsByName('color-one')
 var colorTwo = document.getElementsByName('color-two')
@@ -26,20 +29,23 @@ for (var i=0; i < colorTwo.length; i++) {
     secondColor = e.target.dataset.colors.split(',')
     secondColor.forEach(function(val, index) {
       secondColor[index] = parseInt(val)
-    })
     console.log('2nd', secondColor)
     console.log('first + second', firstColor[0] + secondColor[0])
     mixedColor = [Math.round((firstColor[0] + secondColor[0])/2), Math.round((firstColor[1] + secondColor[1])/2), Math.round((firstColor[2] + secondColor[2])/2), 1]
     finalColor = 'rgba(' + mixedColor.join(',') + ')'
+
     // Need to figure out how to add to database
-    // 'red' = finalColor[0]
-    // 'green' = finalColor[1]
-    //'blue' = finalColor[2]
+    red.value = mixedColor[0]
+    green.value = mixedColor[1]
+    blue.value = mixedColor[2]
+    })
 
     // Puts new color on the big circle
     newColor.style.backgroundColor = finalColor
+
+    // Puts rgb values on the big circle
     colorVal.innerHTML = finalColor
-    console.log(finalColor)
+    console.log('finalcolor', finalColor)
   })
 }
-console.log(mixedColor)
+console.log('mixedcolor', mixedColor)
