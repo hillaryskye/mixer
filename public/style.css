@@ -7,14 +7,21 @@
   border: 1px solid black;
   border-radius: 50%;
 }
-
+section .new {
+  border: none;
+}
 .new {
-  border: 1px solid black;
-  /* position: absolute; */
-  margin-right: 50px;
-  margin-top: -80px;
-  display: block;
-  float: right;
+  z-index: -1;
+  position: absolute;
+  top: 25px;
+  right: 100px;
+/*   border: 1px solid black;
+ *//*   margin-right: 50px;
+margin-top: -220px;
+ */
+   display: block;
+/*   float: right;
+ */
   height: 8em;
   width: 8em;
   border-radius: 50%;
@@ -24,10 +31,10 @@ h1 {
   color: black;
 }
 h4 {
-  margin-right: 50px;
-  margin-top: -150px;
-  display: block;
-  float: right;
+   width: 150px;
+   margin-right: 80px;
+   margin-top: -150px;
+   float: right;
 
   color: black;
   padding-top: 135px;
@@ -45,16 +52,27 @@ button {
   border-radius: 5px;
   background: tan;
 }
-/* .delete {
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  padding: 10px;
-  margin-left: 5px;
-}
- */.radio {
+ .delete {
+   position: absolute;
+   z-index: 100;
+   margin-top: -10px;
+   width: 5em;
+   height: 1em;
+/*    border-radius: 50%;
+ */   padding: 10px;
+   margin-left: 5px;
+ }
+
+.radio {
+  z-index: -100;
   margin: -3px;
   width: 7em;
   height: 7em;
-  opacity: 0;;
-}
+  opacity: 0;
+ }
+
+ .text {
+   width: 200px;
+   margin-top: 18px;
+   margin-right: 2px;
+ }

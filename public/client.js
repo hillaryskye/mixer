@@ -18,27 +18,28 @@ for (var i=0; i < colorOne.length; i++) {
     firstColor.forEach(function(val, index) {
       firstColor[index] = parseInt(val)
     })
-    console.log(firstColor)
+    console.log('1st', firstColor)
   })
 }
-
-
 for (var i=0; i < colorTwo.length; i++) {
   colorTwo[i].addEventListener('click', function(e) {
     secondColor = e.target.dataset.colors.split(',')
     secondColor.forEach(function(val, index) {
       secondColor[index] = parseInt(val)
     })
-    console.log(secondColor)
-    console.log(firstColor[0] + secondColor[0])
+    console.log('2nd', secondColor)
+    console.log('first + second', firstColor[0] + secondColor[0])
     mixedColor = [Math.round((firstColor[0] + secondColor[0])/2), Math.round((firstColor[1] + secondColor[1])/2), Math.round((firstColor[2] + secondColor[2])/2), 1]
     finalColor = 'rgba(' + mixedColor.join(',') + ')'
+    // Need to figure out how to add to database
+    // 'red' = finalColor[0]
+    // 'green' = finalColor[1]
+    //'blue' = finalColor[2]
+
+    // Puts new color on the big circle
     newColor.style.backgroundColor = finalColor
     colorVal.innerHTML = finalColor
     console.log(finalColor)
   })
 }
-
-
-
 console.log(mixedColor)

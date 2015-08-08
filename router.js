@@ -25,6 +25,7 @@ routes.addRoute('/colors', (req, res, url) => {
     req.on('end', function () {
       var color = qs.parse(data)
       colors.insert(color, function (err, doc) {
+        console.log('inserted')
         if (err) res.end('oops from insert')
         res.writeHead(302, {'Location': '/colors'})
         res.end()
@@ -38,6 +39,7 @@ routes.addRoute('/colors/:id/delete', (req, res, url) => {
     colors.remove({_id: url.params.id}, function(err, doc) {
       if (err) console.log(err)
       res.writeHead(302, {'Location': '/colors'})
+      console.log('deleted')
       res.end()
     })
   }
