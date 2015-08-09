@@ -37,9 +37,9 @@ for (var i=0; i < colorOne.length; i++) {
 for (var i=0; i < colorTwo.length; i++) {
   colorTwo[i].addEventListener('click', function(e) {
     // Puts second color in small circle
-    // secondColor = e.target.dataset.colors + ', 1'
-    // secondColor = 'rgba(' + secondColor + ')'
-    // second.style.backgroundColor = secondColor
+    secondColor = e.target.dataset.colors + ', 1'
+    secondColor = 'rgba(' + secondColor + ')'
+    second.style.backgroundColor = secondColor
 
     secondColor = e.target.dataset.colors.split(',')
     secondColor.forEach(function(val, index) {
