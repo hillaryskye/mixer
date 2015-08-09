@@ -45,6 +45,17 @@ routes.addRoute('/colors/:id/delete', (req, res, url) => {
   }
 })
 
+routes.addRoute('/colors/:id', (req, res, url) => {
+  if (req.method === 'GET') {
+    colors.findOne({ _id: url.params.id }, function(err, docs) {
+      if (err) console.log(err)
+      console.log('findOne')
+      var template = view.render('index', {colors: docs})
+      res.end(template)
+    })
+  }
+})
+
 routes.addRoute('/public/*', (req, res, url) => {
   res.setHeader('Content-Type', mime.lookup(req.url))
   fs.readFile('.' + req.url, function(err, file) {

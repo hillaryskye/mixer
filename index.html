@@ -17,6 +17,7 @@
     <input type="text" id="blue" name="blue" placeholder="blue">
     <button type="submit">Create Color</button>
   </form>
+    <button class='clear' id='clear' type="submit">Clear Color</button>
   </section>
   <h3>Click on 2 colors to create a new one!</h3>
   {{#colors}}
@@ -39,10 +40,12 @@
   </form>
     </div>
   {{/colors}}
-  <section class='new'>
-    <h4 class='text'>New Color</h4>
+  <section>
+    <div class='first' id='first-color'></div>
+    <div class='second' id='second-color'></div>
+    <h4 class='text new'>New Color</h4>
     <div class='new' id="mixed"></div>
-    <h4 id="color-val"></h4>
+    <h4 id="color-val" class='new'></h4>
   </section>
   </div><!-- End of wrapper -->
   <script src="public/client.js"></script>

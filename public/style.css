@@ -16,12 +16,9 @@ section .new {
   top: 25px;
   right: 100px;
 /*   border: 1px solid black;
- *//*   margin-right: 50px;
-margin-top: -220px;
- */
+   margin-right: 50px;
+*/
    display: block;
-/*   float: right;
- */
   height: 8em;
   width: 8em;
   border-radius: 50%;
@@ -32,17 +29,17 @@ h1 {
 }
 h4 {
    width: 150px;
-   margin-right: 80px;
-   margin-top: -150px;
+   margin-right: 3px;
+   margin-top: 0px;
    float: right;
 
   color: black;
   padding-top: 135px;
 }
-.wrapper {
+/* .wrapper {
   width: 90%;
 }
-section {
+ */section {
   margin-bottom: 20px;
 }
 button {
@@ -74,5 +71,28 @@ button {
  .text {
    width: 200px;
    margin-top: 18px;
-   margin-right: 2px;
+   margin-right: -100px;
+ }
+ .clear {
+   position: absolute;
+   margin-top: -40px;
+   margin-left: 545px;
+ }
+ .first {
+  z-index: -1;
+  position: absolute;
+  top: 25px;
+  right: 340px;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+ }
+ .second {
+   z-index: -1;
+   position: absolute;
+   top: 25px;
+   right: 300px;
+   border-radius: 50%;
+   width: 4em;
+   height: 4em;
  }

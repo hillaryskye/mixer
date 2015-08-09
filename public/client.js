@@ -1,6 +1,9 @@
 var red = document.getElementById('red')
 var green = document.getElementById('green')
 var blue = document.getElementById('blue')
+var clear = document.getElementById('clear')
+var first = document.getElementById('first-color')
+var second = document.getElementById('second-color')
 var mix = document.getElementById('mix-color')
 var colorOne = document.getElementsByName('color-one')
 var colorTwo = document.getElementsByName('color-two')
@@ -15,22 +18,33 @@ for (var i=0; i < colorOne.length; i++) {
   colorOne[i].addEventListener('click', function(e) {
     if (e.hasOwnProperty) {
       // colorOne.innerHTML = 'first'
-      colorVal.innerHTML = 'Click Another color'
+      colorVal.innerHTML = 'Click second color'
     }
+    // Puts first color in small circle
+    firstColor = e.target.dataset.colors + ', 1'
+    firstColor = 'rgba(' + firstColor + ')'
+    first.style.backgroundColor = firstColor
+
+    // Splits red, green & blue values for first color
     firstColor = e.target.dataset.colors.split(',')
     firstColor.forEach(function(val, index) {
       firstColor[index] = parseInt(val)
+
     })
     console.log('1st', firstColor)
   })
 }
 for (var i=0; i < colorTwo.length; i++) {
   colorTwo[i].addEventListener('click', function(e) {
+    // Puts second color in small circle
+    // secondColor = e.target.dataset.colors + ', 1'
+    // secondColor = 'rgba(' + secondColor + ')'
+    // second.style.backgroundColor = secondColor
+
     secondColor = e.target.dataset.colors.split(',')
     secondColor.forEach(function(val, index) {
       secondColor[index] = parseInt(val)
-    console.log('2nd', secondColor)
-    console.log('first + second', firstColor[0] + secondColor[0])
+
     mixedColor = [Math.round((firstColor[0] + secondColor[0])/2), Math.round((firstColor[1] + secondColor[1])/2), Math.round((firstColor[2] + secondColor[2])/2), 1]
     finalColor = 'rgba(' + mixedColor.join(',') + ')'
 
@@ -38,6 +52,12 @@ for (var i=0; i < colorTwo.length; i++) {
     red.value = mixedColor[0]
     green.value = mixedColor[1]
     blue.value = mixedColor[2]
+    })
+
+    clear.addEventListener('click', function(e) {
+      red.value = 0
+      green.value = 0
+      blue.value = 0
     })
 
     // Puts new color on the big circle
