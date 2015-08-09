@@ -7,12 +7,14 @@ var second = document.getElementById('second-color')
 var mix = document.getElementById('mix-color')
 var colorOne = document.getElementsByName('color-one')
 var colorTwo = document.getElementsByName('color-two')
+var two = document.getElementsByClassName('color-two')
 var newColor = document.getElementById('mixed')
 var colorVal = document.getElementById('color-val')
 var finalColor = ''
 var firstColor = []
 var secondColor = []
 var mixedColor = []
+// var counter = 0
 
 for (var i=0; i < colorOne.length; i++) {
   colorOne[i].addEventListener('click', function(e) {
@@ -30,10 +32,14 @@ for (var i=0; i < colorOne.length; i++) {
     firstColor.forEach(function(val, index) {
       firstColor[index] = parseInt(val)
 
+      // counter++
     })
     console.log('1st', firstColor)
   })
 }
+    // if (counter === 1) {
+    //   colorTwo[i] = two[i]
+    // }
 for (var i=0; i < colorTwo.length; i++) {
   colorTwo[i].addEventListener('click', function(e) {
     // Puts second color in small circle

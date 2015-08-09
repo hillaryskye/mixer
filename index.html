@@ -23,7 +23,7 @@
   {{#colors}}
       <label for="{{_id}}"></label> <!-- First Color -->
       <div class='colors' id="{{_id}}" data-colors="{{red}}, {{green}}, {{blue}}" style="background-color: rgba({{red}}, {{green}}, {{blue}}, 1)">
-        <input class='radio' id="{{_id}}" type="radio" name="color-one" data-colors="{{red}}, {{green}}, {{blue}}" value="{{red}}, {{green}}, {{blue}}">
+        <input class='radio' id="{{_id}}" type="radio" name="color-one" class='color-two' data-colors="{{red}}, {{green}}, {{blue}}" value="{{red}}, {{green}}, {{blue}}">
         <form action="/colors/{{_id}}/delete" method="post">
           <input class='delete' type="submit" value='delete'>
         </form>
@@ -34,16 +34,13 @@
     <label for="{{_id}}"></label><!-- Second color -->
     <div class='colors' id="{{_id}}" data-colors="{{red}}, {{green}}, {{blue}}" style="background-color: rgba({{red}}, {{green}}, {{blue}}, 1)">
       <input class='radio' id="{{_id}}" type="radio" name="color-two" data-colors="{{red}}, {{green}}, {{blue}}" value="{{red}}, {{green}}, {{blue}}">
-  <!-- <form action="/colors" method="post">
-    <button type="submit">Create new Color</button>
-   -->
   </form>
     </div>
   {{/colors}}
   <section>
     <div class='first' id='first-color'></div>
     <div class='second' id='second-color'></div>
-    <h4 class='text new'>New Color</h4>
+    <h4 class='text'>New Color</h4>
     <div class='new' id="mixed"></div>
     <h4 id="color-val" class='new'></h4>
   </section>
