@@ -1,12 +1,12 @@
+  require('dotenv').load();
 var routes = require('routes')(),
         fs = require('fs'),
       view = require('mustache'),
       mime = require('mime'),
-        db = require('monk')('localhost/colors'),
+        db = require('monk')(process.env.MONGOLAB_URI),
     colors = db.get('colors'),
         qs = require('qs'),
       view = require('./view')
-
 
 routes.addRoute('/colors', (req, res, url) => {
   if (req.method === 'GET') {
