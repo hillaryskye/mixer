@@ -67,11 +67,14 @@ button {
   height: 7em;
   opacity: 0;
  }
+.show {
+   display: block;;
+}
 
  .text {
    width: 200px;
-   margin-top: 18px;
-   margin-right: -100px;
+   margin-top: -420px;
+   margin-right: -14px;
  }
  .clear {
    position: absolute;
