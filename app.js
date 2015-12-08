@@ -19,7 +19,7 @@ var server = http.createServer(function (req, res) {
   }
 })
 
-server.listen(process.env.PORT || 8000, function (err) {
+server.listen(process.env.PORT || 3000, function (err) {
   if (err) console.log('error on listening', err)
   console.log('Woot.  A server is running on port 8000')
 })
