@@ -1,4 +1,4 @@
-.colors {
+/* .colors {
   margin-top: 20px;
   margin: 5px;
   height: 4em;
@@ -16,9 +16,8 @@ section .new {
   position: absolute;
   top: 25px;
   right: 100px;
-/*   border: 1px solid black;
+border: 1px solid black;
    margin-right: 50px;
-*/
    display: block;
   height: 8em;
   width: 8em;
@@ -39,8 +38,7 @@ h4 {
 }
  .wrapper {
   padding-left: 10px;
-}
- */section {
+}section {
   margin-bottom: 20px;
 }
 button {
@@ -56,8 +54,7 @@ button {
    margin-top: -25px;
    width: 5em;
    height: 1em;
-/*    border-radius: 50%;
- */
+border-radius: 50%;
    padding: 10px;
    margin-left: 5px;
    line-height: .1em;
@@ -102,3 +99,4 @@ button {
    width: 4em;
    height: 4em;
  }
+ */
