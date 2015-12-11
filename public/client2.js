@@ -75,3 +75,5 @@ var isFirst = false
       })
     }
     console.log('mixedcolor', mixedColor)
+
+  

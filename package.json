@@ -23,6 +23,7 @@
     "mustache": "^2.1.2",
     "qs": "^4.0.0",
     "routes": "^2.0.0",
-    "serve-favicon": "^2.3.0"
+    "serve-favicon": "^2.3.0",
+    "spectrum-colorpicker": "^1.7.1"
   }
 }
