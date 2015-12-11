@@ -12,7 +12,11 @@ routes.addRoute('/colors', (req, res, url) => {
   if (req.method === 'GET') {
     res.setHeader('Content-Type', 'text/html')
     colors.find({}, function (err, docs) {
-      if (err) res.end('oops from root', err)
+      if (err) {
+        console.log(err);
+        res.end(err);
+        return;
+      }
       var template = view.render('index', {colors: docs})
       res.end(template)
     })
