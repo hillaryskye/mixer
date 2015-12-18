@@ -28,7 +28,7 @@
   <h3>Click on 2 colors to create a new one!</h3>
     <div class="row">
     <section>
-      <div class="one-half">
+      <div class="three-fourth">
         {{#colors}}
           <label for="{{_id}}"></label> <!-- First Color -->
           <div class='colors' id="{{_id}}" data-colors="{{red}}, {{green}}, {{blue}}" style="background-color: rgba({{red}}, {{green}}, {{blue}}, 1)">
@@ -42,7 +42,7 @@
     </section>
   <br>
 
-      <div class="one-half mixing">
+      <div class="one-fourth mixing">
         <div class='first' id='first-color'></div>
         <div class='second' id='second-color'></div>
         <div class='new' id="mixed"></div>

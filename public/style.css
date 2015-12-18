@@ -168,9 +168,9 @@ text-align: center;
   width: 100%; }
 
 /* -- Column Margin & Float-- */
-.one_half, .one_third, .two_third,
-.three_fourth, .one_fourth, .one_column,
-.full_column {
+.one-half, .one-third, .two-third,
+.three-fourth, .one-fourth, .one-column,
+.full-column {
   margin-left: 3%;
   margin-top: 1%;
   float: left; }
