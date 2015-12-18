@@ -135,15 +135,108 @@ text-align: center;
   clear: both; }
 
 /* Phones ----------- */
-@media only screen and (max-width: 767px) {
-  p {
-    font-size: 18px; } }
+@media only screen and (max-width: 600px) {
+  .new {
+    width: 5.5em;
+    height: 5.5em;
+    margin-top: -90px;
+    margin-left: 50px;
+  }
+
+  .first, .second {
+    width: 3em;
+    height: 3em;
+  }
+
+  .colors {
+    width: 3em;
+    height: 3em;
+  }
+
+  .radio {
+    width: 6em;
+    height: 6em;
+  }
+
+  .delete {
+    margin-left: 0px;
+  }
+  .responsive-left {
+    width: 61.666%;
+    background: magenta;
+  }
+  .responsive-right {
+    width: 29.333%;
+    background: magenta;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .new {
+    width: 6em;
+    height: 6em;
+    margin-top: -105px;
+    margin-left: 60px;
+  }
+
+  .first, .second {
+    width: 3.5em;
+    height: 3.5em;
+  }
+
+  .colors {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .radio {
+    width: 6.5em;
+    height: 6.5em;
+  }
+  .responsive-left {
+    width: 61.666%;
+    background: orange;
+  }
+  .responsive-right {
+    width: 29.333%;
+    background: orange;
+  }
+}
+
 
 /* Tablets ----------- */
-@media only screen and (min-width: 768px) {
-  /* CSS Styles */
-  p {
-    font-size: 16px; } }
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  .new {
+    width: 7em;
+    height: 7em;
+    margin-top: -120px;
+    margin-left: 65px;
+  }
+
+  .delete {
+    margin-left: 5px;
+  }
+
+  .responsive-left {
+    width: 58%;
+    background: yellow;
+  }
+  .responsive-right {
+    width: 25%;
+    background: yellow;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .responsive-left {
+    width: 69.75%;
+    background: green;
+  }
+  .responsive-right {
+    width: 21.25%;
+    background: green;
+  }
+}
+
 
 /* -------- COLUMN LAYOUTS -------*/
 /* -- Column Sizes -- */
@@ -170,7 +263,7 @@ text-align: center;
 /* -- Column Margin & Float-- */
 .one-half, .one-third, .two-third,
 .three-fourth, .one-fourth, .one-column,
-.full-column {
+.full-column, .responsive-left, .responsive-right {
   margin-left: 3%;
   margin-top: 1%;
   float: left; }
@@ -180,19 +273,3 @@ text-align: center;
   content: "";
   display: table;
   clear: both; }
-
-/* Phones ----------- */
- @media only screen and (max-width: 767px) {
-   p {
-     font-size: 18px;
-   }
-}
-
-    /* Tablets ----------- */
-    @media only screen and (min-width: 768px) {
-      /* CSS Styles */
-      p {
-        font-size: 16px;
-      }
-
-}
