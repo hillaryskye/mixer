@@ -4,43 +4,42 @@
   height: 4em;
   width: 4em;
   display: inline-block;
-  border: 1px solid black;
+  border: 1px solid grey;
   border-radius: 50%;
   margin-bottom: 15px;
+  float: left;
 }
 section .new {
   border: none;
 }
+
 .new {
-  z-index: -1;
-  position: absolute;
-  top: 25px;
-  right: 100px;
-/*   border: 1px solid black;
-   margin-right: 50px;
-*/
-   display: block;
+  margin-top: -132px;
+  margin-left: 75px;
   height: 8em;
   width: 8em;
   border-radius: 50%;
+  border: 1px solid grey;
+}
+
+.rgb {
+
 }
 h1 {
   text-align: center;
   color: black;
 }
 h4 {
-   width: 150px;
-   margin-right: 3px;
-   margin-top: 0px;
-   float: right;
-
+  width: 230px;
   color: black;
-  padding-top: 135px;
+  text-align: center;
 }
  .wrapper {
   padding-left: 10px;
 }
- */section {
+ */
+
+ section {
   margin-bottom: 20px;
 }
 button {
@@ -56,8 +55,10 @@ button {
    margin-top: -25px;
    width: 5em;
    height: 1em;
-/*    border-radius: 50%;
- */
+   background: #f0e68c;
+   color: #D001FF;
+   font-weight: 700;
+   border-radius: 10px;
    padding: 10px;
    margin-left: 5px;
    line-height: .1em;
@@ -75,30 +76,123 @@ button {
 }
 
  .text {
-   width: 200px;
-   margin-top: -420px;
-   margin-right: -14px;
+    margin-top: 15px;
  }
  .clear {
    position: absolute;
-   margin-top: -40px;
-   margin-left: 545px;
+   margin-top: -41px;
+   margin-left: 575px;
  }
  .first {
-  z-index: -1;
-  position: absolute;
-  top: 25px;
-  right: 340px;
+  margin-bottom: 5px;
   border-radius: 50%;
   width: 4em;
   height: 4em;
+  border: 1px solid grey;
  }
  .second {
-   z-index: -1;
-   position: absolute;
-   top: 25px;
-   right: 260px;
    border-radius: 50%;
    width: 4em;
    height: 4em;
+   border: 1px solid grey;
  }
+
+.mixing {
+  width: 100%;
+}
+
+.left {
+  margin: 0 auto;
+  float: left; }
+
+.left:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.right {
+  float: right; }
+
+.right:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.one-half {
+  /*   border: 2px solid purple;
+text-align: center;
+ */
+  width: 45%;
+  padding: 5px;
+  /*   display: inline-block;
+ */
+  float: left;
+  margin: 5px; }
+
+.one-half:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Phones ----------- */
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 18px; } }
+
+/* Tablets ----------- */
+@media only screen and (min-width: 768px) {
+  /* CSS Styles */
+  p {
+    font-size: 16px; } }
+
+/* -------- COLUMN LAYOUTS -------*/
+/* -- Column Sizes -- */
+.one-fourth {
+  width: 21.25%; }
+
+.one-third {
+  width: 29.333%; }
+
+/* .one-half     { width:45.5%; }
+*/
+.two-third {
+  width: 61.666%; }
+
+.three-fourth {
+  width: 69.75%; }
+
+.one-column {
+  width: 94%; }
+
+.full-column {
+  width: 100%; }
+
+/* -- Column Margin & Float-- */
+.one_half, .one_third, .two_third,
+.three_fourth, .one_fourth, .one_column,
+.full_column {
+  margin-left: 3%;
+  margin-top: 1%;
+  float: left; }
+
+/* -- Column Row (aka Clearfix) -- */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Phones ----------- */
+ @media only screen and (max-width: 767px) {
+   p {
+     font-size: 18px;
+   }
+}
+
+    /* Tablets ----------- */
+    @media only screen and (min-width: 768px) {
+      /* CSS Styles */
+      p {
+        font-size: 16px;
+      }
+
+}
