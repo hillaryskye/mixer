@@ -18,6 +18,9 @@ routes.addRoute('/colors', (req, res, url) => {
         return;
       }
       var template = view.render('index', {colors: docs})
+      console.log('colors from router', docs[0])
+      var colorsFirst = docs[0]
+      console.log('first', colorsFirst)
       res.end(template)
     })
   }

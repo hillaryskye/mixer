@@ -9,8 +9,10 @@
 </head>
 <body>
   <div class='wrapper'>
-    <h1>Color Palette Blender</h1>
+    {{#colors}}
 
+        <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">Color Palette Blender</h1>
+    {{/colors}}
   <section>
   <h3>Pick a red, green and blue rgb value between 1 - 255 to create a color!</h3>
   <form class="button" action="/colors" method="post">
@@ -19,7 +21,7 @@
       <input type="text" id="green" name="green" placeholder="green">
       <input type="text" id="blue" name="blue" placeholder="blue">
     </div>
-    <div class="rgb">      
+    <div class="rgb">
       <button class="create" type="submit">Create Color</button>
       <button class='clear' id='clear' type="submit">Clear Color</button>
     </div>
