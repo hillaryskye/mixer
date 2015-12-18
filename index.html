@@ -13,13 +13,17 @@
 
   <section>
   <h3>Pick a red, green and blue rgb value between 1 - 255 to create a color!</h3>
-  <form action="/colors" method="post">
-    <input type="text" id="red" name="red" placeholder="red">
-    <input type="text" id="green" name="green" placeholder="green">
-    <input type="text" id="blue" name="blue" placeholder="blue">
-    <button type="submit">Create Color</button>
+  <form class="button" action="/colors" method="post">
+    <div class="rgb">
+      <input type="text" id="red" name="red" placeholder="red">
+      <input type="text" id="green" name="green" placeholder="green">
+      <input type="text" id="blue" name="blue" placeholder="blue">
+    </div>
+    <div class="rgb">      
+      <button class="create" type="submit">Create Color</button>
+      <button class='clear' id='clear' type="submit">Clear Color</button>
+    </div>
   </form>
-    <button class='clear' id='clear' type="submit">Clear Color</button>
   </section>
   </div><!-- End of wrapper -->
 

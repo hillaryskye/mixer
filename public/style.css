@@ -9,6 +9,9 @@
   margin-bottom: 15px;
   float: left;
 }
+.colors:hover {
+  border: 1px solid gold;
+}
 section .new {
   border: none;
 }
@@ -23,7 +26,7 @@ section .new {
 }
 
 .rgb {
-
+  display: inline-block;
 }
 h1 {
   text-align: center;
@@ -46,8 +49,16 @@ button {
   font-size: .9em;
   margin-left: 20px;
   padding: 10px 25px;
-  border-radius: 5px;
-  background: tan;
+  background: #d001ff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+button:hover {
+  color: #d001ff;
+  background: white;
+}
+.button {
+  display: inline-block;
 }
  .delete {
    position: absolute;
@@ -62,6 +73,10 @@ button {
    padding: 10px;
    margin-left: 5px;
    line-height: .1em;
+ }
+ .delete:hover {
+   color: black;
+   background: white;
  }
 
 .radio {
@@ -79,9 +94,7 @@ button {
     margin-top: 15px;
  }
  .clear {
-   position: absolute;
-   margin-top: -41px;
-   margin-left: 575px;
+
  }
  .first {
   margin-bottom: 5px;
@@ -158,17 +171,20 @@ text-align: center;
     height: 6em;
   }
 
+.rgb {
+    margin-left: 20px;
+}
   .delete {
     margin-left: 0px;
   }
   .responsive-left {
     width: 61.666%;
-    background: magenta;
-  }
+/*     background: magenta;
+ */  }
   .responsive-right {
     width: 29.333%;
-    background: magenta;
-  }
+/*     background: magenta;
+ */  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
@@ -184,6 +200,10 @@ text-align: center;
     height: 3.5em;
   }
 
+  .rgb {
+    margin-left: 75px;
+}
+
   .colors {
     width: 3.5em;
     height: 3.5em;
@@ -194,12 +214,12 @@ text-align: center;
   }
   .responsive-left {
     width: 61.666%;
-    background: orange;
-  }
+/*     background: orange;
+ */  }
   .responsive-right {
     width: 29.333%;
-    background: orange;
-  }
+/*     background: orange;
+ */  }
 }
 
 
@@ -218,23 +238,23 @@ text-align: center;
 
   .responsive-left {
     width: 58%;
-    background: yellow;
-  }
+/*     background: yellow;
+ */  }
   .responsive-right {
     width: 25%;
-    background: yellow;
-  }
+/*     background: yellow;
+ */  }
 }
 
 @media only screen and (min-width: 900px) {
   .responsive-left {
     width: 69.75%;
-    background: green;
-  }
+/*     background: green;
+ */  }
   .responsive-right {
     width: 21.25%;
-    background: green;
-  }
+/*     background: green;
+ */  }
 }
 
 
