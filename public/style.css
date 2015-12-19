@@ -33,6 +33,10 @@ section .new {
   margin: 0 auto;
   text-align: center;
   width: 60%;
+  outline: solid white;
+  /* border: 1px solid black; */
+  outline-offset: -5px;
+  padding: 10px;
 }
 
 h1 {
