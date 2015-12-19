@@ -58,6 +58,9 @@ h4 {
   color: black;
   text-align: center;
 }
+h3 {
+  font-size: 1.8em;
+}
  .wrapper {
   padding-left: 10px;
 }
@@ -66,7 +69,7 @@ h4 {
   margin-bottom: 20px;
 }
 button {
-  font-size: .9em;
+  font-size: 1.5em;
   margin-left: 20px;
   padding: 10px 25px;
   background: #d001ff;
