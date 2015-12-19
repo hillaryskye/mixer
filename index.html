@@ -9,10 +9,65 @@
 </head>
 <body>
   <div class='wrapper'>
-    {{#colors}}
-
-        <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">Color Palette Blender</h1>
-    {{/colors}}
+      <div class="title">
+        {{#firstColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">C</h1>
+        {{/firstColor}}
+        {{#secondColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">o</h1>
+        {{/secondColor}}
+        {{#thirdColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">l</h1>
+        {{/thirdColor}}
+        {{#fourthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">o</h1>
+        {{/fourthColor}}
+        {{#fifthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">r </h1>
+        {{/fifthColor}}
+        {{#sixthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">P</h1>
+        {{/sixthColor}}
+        {{#seventhColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">a</h1>
+        {{/seventhColor}}
+        {{#eighthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">l</h1>
+        {{/eighthColor}}
+        {{#ninthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">e</h1>
+        {{/ninthColor}}
+        {{#tenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">t</h1>
+        {{/tenthColor}}
+        {{#eleventhColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">t</h1>
+        {{/eleventhColor}}
+        {{#twelfthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">e </h1>
+        {{/twelfthColor}}
+        {{#thirteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">B</h1>
+        {{/thirteenthColor}}
+        {{#fourteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">l</h1>
+        {{/fourteenthColor}}
+        {{#fifteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">e</h1>
+        {{/fifteenthColor}}
+        {{#sixteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">n</h1>
+        {{/sixteenthColor}}
+        {{#seventeenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">d</h1>
+        {{/seventeenthColor}}
+        {{#eighteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">e</h1>
+        {{/eighteenthColor}}
+        {{#nineteenthColor}}
+            <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">r</h1>
+        {{/nineteenthColor}}
+      </div>
   <section>
   <h3>Pick a red, green and blue rgb value between 1 - 255 to create a color!</h3>
   <form class="button" action="/colors" method="post">

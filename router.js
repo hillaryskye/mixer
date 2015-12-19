@@ -17,7 +17,28 @@ routes.addRoute('/colors', (req, res, url) => {
         res.end(err);
         return;
       }
-      var template = view.render('index', {colors: docs})
+      var template = view.render('index', {
+        firstColor: docs[0],
+        secondColor: docs[1],
+        thirdColor: docs[2],
+        fourthColor: docs[3],
+        fifthColor: docs[4],
+        sixthColor: docs[5],
+        seventhColor: docs[6],
+        eighthColor: docs[7],
+        ninthColor: docs[8],
+        tenthColor: docs[9],
+        eleventhColor: docs[10],
+        twelfthColor: docs[11],
+        thirteenthColor: docs[12],
+        fourteenthColor: docs[13],
+        fifteenthColor: docs[14],
+        sixteenthColor: docs[15],
+        seventeenthColor: docs[16],
+        eighteenthColor: docs[17],
+        nineteenthColor: docs[18],
+        colors: docs
+      })
       console.log('colors from router', docs[0])
       var colorsFirst = docs[0]
       console.log('first', colorsFirst)

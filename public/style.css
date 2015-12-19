@@ -28,9 +28,17 @@ section .new {
 .rgb {
   display: inline-block;
 }
-h1 {
+.title {
+  background: black;
+  margin: 0 auto;
   text-align: center;
-  color: black;
+  width: 60%;
+}
+
+h1 {
+  margin: 0 auto;
+  display: inline;
+  font-size: 44px;
 }
 h4 {
   width: 230px;
@@ -188,6 +196,12 @@ text-align: center;
     width: 29.333%;
 /*     background: magenta;
  */  }
+ h1 {
+   font-size: 30px;
+ }
+ .title {
+   width: 92%;
+ }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
@@ -247,6 +261,12 @@ text-align: center;
     width: 25%;
 /*     background: yellow;
  */  }
+ .title {
+  width: 70%;
+ }
+ h1 {
+   font-size: 30px;
+ }
 }
 
 @media only screen and (min-width: 900px) {
@@ -258,7 +278,15 @@ text-align: center;
     width: 21.25%;
 /*     background: green;
  */  }
+
 }
+
+@media only screen and (min-width: 900) and (max-width: 1200px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
 
 
 /* -------- COLUMN LAYOUTS -------*/
