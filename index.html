@@ -9,6 +9,8 @@
 </head>
 <body>
   <div class='wrapper'>
+    <div class="header"></div>
+
       <div class="title">
         {{#firstColor}}
             <h1 style="color: rgba({{red}}, {{green}}, {{blue}}, 1)">C</h1>
@@ -71,21 +73,20 @@
   <section>
   <h3>Pick a red, green and blue rgb value between 1 - 255 to create a color!</h3>
   <form class="button" action="/colors" method="post">
-    <div class="rgb">
+    <div class="rgb responsive">
       <input type="text" id="red" name="red" placeholder="red">
       <input type="text" id="green" name="green" placeholder="green">
       <input type="text" id="blue" name="blue" placeholder="blue">
     </div>
     <div class="rgb">
       <button class="create" type="submit">Create Color</button>
-      <button class='clear' id='clear' type="submit">Clear Color</button>
     </div>
   </form>
+          <button class='clear' id='clear' type="submit">Clear Color</button>
   </section>
   </div><!-- End of wrapper -->
 
   <div class="wrapper">
-
   <h3>Click on 2 colors to create a new one!</h3>
     <div class="row">
     <section>

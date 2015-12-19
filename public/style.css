@@ -26,10 +26,15 @@ section .new {
 }
 
 .rgb {
-  display: inline-block;
+  float: left;
+}
+
+.rgb:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .title {
-  background: black;
   margin: 0 auto;
   text-align: center;
   width: 60%;
@@ -38,11 +43,15 @@ section .new {
   outline-offset: -5px;
   padding: 10px;
 }
-
+.header {
+  background: black;
+  opacity: .4;
+}
 h1 {
   margin: 0 auto;
   display: inline;
   font-size: 44px;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
 h4 {
   width: 230px;
@@ -52,7 +61,6 @@ h4 {
  .wrapper {
   padding-left: 10px;
 }
- */
 
  section {
   margin-bottom: 20px;
@@ -70,7 +78,6 @@ button:hover {
   background: white;
 }
 .button {
-  display: inline-block;
 }
  .delete {
    position: absolute;
@@ -125,7 +132,9 @@ button:hover {
 .mixing {
   width: 100%;
 }
-
+input {
+  margin-top: 20px;
+}
 .left {
   margin: 0 auto;
   float: left; }
@@ -160,7 +169,7 @@ text-align: center;
   clear: both; }
 
 /* Phones ----------- */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 600px) {
   .new {
     width: 5.5em;
     height: 5.5em;
@@ -186,9 +195,12 @@ text-align: center;
     height: 6em;
   }
 
-.rgb {
+.responsive {
     margin-left: 20px;
 }
+/* input {
+  width: 25%;
+} */
   .delete {
     margin-left: 0px;
   }
@@ -206,6 +218,12 @@ text-align: center;
  .title {
    width: 92%;
  }
+ .create {
+   margin-left: 70px;
+ }
+button {
+  margin: 20px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 700px) {
@@ -221,8 +239,8 @@ text-align: center;
     height: 3.5em;
   }
 
-  .rgb {
-    margin-left: 75px;
+  .responsive {
+    margin-left: 0px;
 }
 
   .colors {
@@ -233,14 +251,22 @@ text-align: center;
     width: 6.5em;
     height: 6.5em;
   }
-  .responsive-left {
-    width: 61.666%;
+
+ button {
+   margin: 20px;
+ }
+ .create {
+   margin-left: 50px;
+ }
+ .responsive-left {
+   width: 61.666%;
 /*     background: orange;
- */  }
-  .responsive-right {
-    width: 29.333%;
+*/  }
+ .responsive-right {
+   width: 29.333%;
 /*     background: orange;
- */  }
+*/
+  }
 }
 
 
@@ -264,13 +290,17 @@ text-align: center;
   .responsive-right {
     width: 25%;
 /*     background: yellow;
- */  }
+ */
+}
  .title {
   width: 70%;
  }
  h1 {
    font-size: 30px;
  }
+ /* button {
+   padding: 10px 14px;
+ } */
 }
 
 @media only screen and (min-width: 900px) {
