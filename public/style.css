@@ -71,10 +71,11 @@ h3 {
 button {
   font-size: 1.5em;
   margin-left: 20px;
-  padding: 10px 25px;
+  padding: 5px 25px;
   background: #d001ff;
   font-weight: 600;
   margin-top: 10px;
+  border-radius: 25px;
 }
 button:hover {
   color: #d001ff;
@@ -134,9 +135,19 @@ button:hover {
 .mixing {
   width: 100%;
 }
-input {
-  margin-top: 20px;
-  font-size: 1.2em;
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+.blue {
+  color: blue
+}
+.input {
+  margin-top: 15px;
+  font-size: 1.6em;
+  width: 142px;
 }
 .left {
   margin: 0 auto;
@@ -237,13 +248,13 @@ button {
     margin-left: 60px;
   }
 
-  .first, .second {
+.first, .second {
     width: 3.5em;
     height: 3.5em;
   }
 
-  .responsive {
-    margin-left: 0px;
+.responsive {
+    width: 23%;
 }
 
   .colors {
