@@ -1,8 +1,8 @@
 .colors {
   margin-top: 20px;
   margin: 5px;
-  height: 5em;
-  width: 5em;
+  height: 7em;
+  width: 7em;
   display: inline-block;
   border: 1px solid grey;
   border-radius: 50%;
@@ -17,10 +17,10 @@ section .new {
 }
 
 .new {
-  margin-top: -132px;
-  margin-left: 75px;
-  height: 8em;
-  width: 8em;
+  margin-top: -200px;
+  margin-left: 118px;
+  height: 10em;
+  width: 10em;
   border-radius: 50%;
   border: 1px solid grey;
 }
@@ -54,9 +54,11 @@ h1 {
   text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
 }
 h4 {
-  width: 230px;
+  width: 305px;
   color: black;
   text-align: center;
+  font-size: 1.8em;
+  margin-top: 0px;
 }
 h3 {
   font-size: 1.8em;
@@ -86,16 +88,17 @@ button:hover {
 .delete {
   position: absolute;
   z-index: 100;
-  margin-top: -20px;
+  margin-top: -10px;
   width: 5em;
-  height: 1em;
+  height: 1.5em;
   background: #f0e68c;
   color: #D001FF;
   font-weight: 700;
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 20px;
+  /* padding: 3px 10px; */
   line-height: .1em;
-  font-size: 1.0em;
+  font-size: 1.3em;
+  margin-left: 5px;
 }
  /* .delete {
    position: absolute;
@@ -132,14 +135,14 @@ button:hover {
  .first {
   margin-bottom: 5px;
   border-radius: 50%;
-  width: 4em;
-  height: 4em;
+  width: 7em;
+  height: 7em;
   border: 1px solid grey;
  }
  .second {
    border-radius: 50%;
-   width: 4em;
-   height: 4em;
+   width: 7em;
+   height: 7em;
    border: 1px solid grey;
  }
 .fa {
@@ -203,7 +206,7 @@ text-align: center;
   clear: both; }
 
 /* Phones ----------- */
-@media only screen and (min-width: 0px) and (max-width: 600px) {
+@media only screen and (min-width: 0px) and (max-width: 498px) {
   .new {
     width: 5.5em;
     height: 5.5em;
@@ -260,7 +263,7 @@ button {
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 700px) {
+@media only screen and (min-width: 500px) and (max-width: 599px) {
   .new {
     width: 6em;
     height: 6em;
@@ -307,10 +310,10 @@ button {
 /* Tablets ----------- */
 @media only screen and (min-width: 600px) and (max-width: 900px) {
   .new {
-    width: 7em;
-    height: 7em;
-    margin-top: -120px;
-    margin-left: 65px;
+    width: 10em;
+    height: 10em;
+    margin-top: -200px;
+    margin-left: 122px;
   }
 
   .delete {
