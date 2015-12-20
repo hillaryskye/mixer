@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src='spectrum.js'></script>
   <link rel='stylesheet' href='spectrum.css' />
 </head>
@@ -96,8 +97,10 @@
           <div class='colors' id="{{_id}}" data-colors="{{red}}, {{green}}, {{blue}}" style="background-color: rgba({{red}}, {{green}}, {{blue}}, 1)">
             <input class='radio' id="{{_id}}" type="radio" name="color" data-colors="{{red}}, {{green}}, {{blue}}" value="{{red}}, {{green}}, {{blue}}">
             <form action="/colors/{{_id}}/delete" method="post">
-              <input class='delete' type="submit" value='delete'>
-            </form>
+<!--               <input class='delete' type="submit" value='delete'>
+ -->
+             <input type="submit" class="delete" value="delete">
+          </form>
           </div>
         {{/colors}}
         </div>

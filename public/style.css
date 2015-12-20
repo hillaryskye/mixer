@@ -1,8 +1,8 @@
 .colors {
   margin-top: 20px;
   margin: 5px;
-  height: 4em;
-  width: 4em;
+  height: 5em;
+  width: 5em;
   display: inline-block;
   border: 1px solid grey;
   border-radius: 50%;
@@ -83,19 +83,30 @@ button:hover {
 }
 .button {
 }
- .delete {
+.delete {
+  position: absolute;
+  z-index: 100;
+  margin-top: -20px;
+  width: 5em;
+  height: 1em;
+  background: #f0e68c;
+  color: #D001FF;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  line-height: .1em;
+  font-size: 1.0em;
+}
+ /* .delete {
    position: absolute;
    z-index: 100;
-   margin-top: -35px;
-   width: 5em;
-   height: 1em;
-   background: #f0e68c;
-   color: #D001FF;
+   margin-top: -83px;
+   background: white;
+   color: inherit;
    font-weight: 700;
-   border-radius: 10px;
-   padding: 10px;
-   line-height: .1em;
- }
+   margin-left: 29px;
+   padding: 0;
+ } */
  .delete:hover {
    color: black;
    background: white;
@@ -131,7 +142,16 @@ button:hover {
    height: 4em;
    border: 1px solid grey;
  }
-
+.fa {
+  font-size: 1.5em;
+  background: inherit;
+  border-radius: 50%;
+  margin-top: -81px;
+  z-index: 1000;
+  display: block;
+  font-size: 1.6em;
+  margin-left: 32px;
+}
 .mixing {
   width: 100%;
 }
