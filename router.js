@@ -5,6 +5,7 @@ var routes = require('routes')(),
       mime = require('mime'),
         db = require('monk')(process.env.MONGOLAB_URI),
     colors = db.get('colors'),
+    title = db.get('title'),
         qs = require('qs'),
       view = require('./view')
 
